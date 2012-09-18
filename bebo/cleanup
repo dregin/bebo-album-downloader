@@ -1,0 +1,3 @@
+for i in `find /home/associat/d/dregin/public_html/bebo/albums -maxdepth 1 -type f -mmin +60 -print`; do echo -e "Deleting file $i";rm -rf $i; done
+for i in `find /home/associat/d/dregin/public_html/bebo/bebo\ pix/ -maxdepth 1 -type d -mmin +60 -print`; do echo -e "Deleting directory $i";rm -rf `$i`; done
+
